@@ -1,0 +1,19 @@
+{
+  "name": "closing-time",
+  "version": "0.0.1",
+  "description": "Identify issues on your GitHub repository that are old and close them.",
+  "scripts": {
+    "pretest": "eslint --ignore-path .gitignore ./",
+    "test": "tap --coverage --coverage-report=cobertura ./test/test-*"
+  },
+  "dependencies": {
+    "octokat": "^0.4.18",
+    "strong-debug-utils": "^1.0.1",
+    "yargs": "^6.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-strongloop": "^2.1.0",
+    "tap": "^8.0.0"
+  }
+}
