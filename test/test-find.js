@@ -1,5 +1,6 @@
 'use strict';
 
+var _ = require('lodash');
 var debug = require('../lib/debug')('test-find');
 var find = require('../lib/find').handler;
 var tap = require('tap');
@@ -22,12 +23,17 @@ tap.test('find issues', function(t) {
   });
 
   function issueAssert(t, args, count) {
-    var opts = { octokatCtor: require('./fixtures/fake-octokat') };
+    var opts = {
+      octokatCtor: require('./fixtures/fake-octokat'),
+      console: {
+        // Silence console output for tests.
+        log: function() {},
+      },
+    };
     return find(args, opts).then(function(issues) {
       t.assert(issues, 'issues exist');
       debug('issues: ', issues);
-      t.assert(issues instanceof Array, 'issues are an array');
-      t.equals(issues.length, count, 'correct number of issues found');
+      t.equals(_.keys(issues).length, count, 'correct number of issues found');
       t.end();
     });
   }
