@@ -9,12 +9,12 @@ var tap = require('tap');
 tap.test('find issues', function(t) {
   t.test('simple issue tests', function(t) {
 
-    var defaultAge = basicChecks(t, 'default age', 2, {
+    var defaultAge = basicChecks(t, 'default age', 4, {
       token: 'fakeToken',
       repo: 'magicOrg/fakeRepo',
     });
 
-    var nonDefaultAge = basicChecks(t, 'non-default age', 1, {
+    var nonDefaultAge = basicChecks(t, 'non-default age', 2, {
       token: 'fakeToken',
       repo: 'magicOrg/fakeRepo',
       age: 60,
@@ -29,13 +29,13 @@ tap.test('find issues', function(t) {
   });
 
   t.test('verbose issue tests', function(t) {
-    var defaultAge = basicChecks(t, 'default age', 2, {
+    var defaultAge = basicChecks(t, 'default age', 4, {
       token: 'fakeToken',
       repo: 'magicOrg/fakeRepo',
       verbose: true,
     });
 
-    var nonDefaultAge = basicChecks(t, 'non-default age', 1, {
+    var nonDefaultAge = basicChecks(t, 'non-default age', 2, {
       token: 'fakeToken',
       repo: 'magicOrg/fakeRepo',
       verbose: true,
@@ -65,7 +65,7 @@ tap.test('find issues', function(t) {
   });
 
   t.test('no silent flag', function(t) {
-    return consoleChecks(t, 'loud', 3, {
+    return consoleChecks(t, 'loud', 2, {
       token: 'fakeToken',
       repo: 'magicOrg/fakeRepo',
       verbose: true,
@@ -86,7 +86,7 @@ tap.test('find issues', function(t) {
       t.comment(label);
       t.assert(issues, 'issues exist');
       debug('issues: ', issues);
-      t.equals(_.keys(issues).length, count, 'correct number of issues found');
+      t.equals(issues.length, count, 'correct number of issues found');
       return issues;
     });
   }
