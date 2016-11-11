@@ -2,6 +2,4 @@
 
 'use strict';
 
-require('yargs')
-  .command(require('./lib/find'))
-  .help().argv;
+exports.find = require('./lib/find').handler;
