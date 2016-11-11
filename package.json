@@ -7,7 +7,7 @@
     "test": "tap --coverage --coverage-report=cobertura ./test/test-*"
   },
   "bin": {
-    "closing-time": "./index.js"
+    "closing-time": "./bin/closing-time.js"
   },
   "dependencies": {
     "bluebird": "^3.4.6",
