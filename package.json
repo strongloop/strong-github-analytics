@@ -1,5 +1,5 @@
 {
-  "name": "closing-time",
+  "name": "apic-github-cli",
   "version": "0.0.1",
   "description": "Identify issues on your GitHub repository that are old and close them.",
   "scripts": {
