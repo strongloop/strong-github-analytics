@@ -1,5 +1,5 @@
-# apic-github-cli
+# strong-github-analytics
 
-[![Build Status](https://travis.ibm.com/delisle/apic-github-cli.svg?branch=master)](https://travis.ibm.com/delisle/apic-github-cli)
+[![Build Status](https://travis-ci.org/strongloop/strong-github-analytics.svg?branch=master)](https://travis-ci.org/strongloop/strong-github-analytics)
 
-A CLI toolkit for interacting with GitHub.
+A toolkit that utilizes the strong-github-api for generating analytics data.
