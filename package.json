@@ -9,6 +9,19 @@
   "bin": {
     "closing-time": "./bin/closing-time.js"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strongloop/strong-github-analytics.git"
+  },
+  "homepage": "https://github.com/strongloop/strong-github-analytics#readme",
+  "keywords": [
+    "strong-github-analytics"
+  ],
+  "bugs": {
+    "url": "https://github.com/strongloop/strong-github-analytics/issues"
+  },
+  "author": "Kevin Delisle <delisle@ca.ibm.com>",
   "dependencies": {
     "bluebird": "^3.4.6",
     "lodash": "^4.16.6",
