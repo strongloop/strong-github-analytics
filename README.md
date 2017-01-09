@@ -31,7 +31,7 @@ For a complete list of options, run `sl-gh make-sprint --help`.
 
 ### Example
 ```
-sl-gh make-sprint 14 --token=abcdef12345abcdef12345 --org=strongloop --title="Sprint 42"
+sl-gh make-sprint 2012-12-12 --token=abcdef12345abcdef12345 --org=strongloop --title="Sprint 42"
 --description="Sprint to end all sprints!"
 ```
 
