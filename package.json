@@ -1,6 +1,6 @@
 {
   "name": "strong-github-analytics",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A toolkit that utilizes the strong-github-api for generating analytics data.",
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore ./",
