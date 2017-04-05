@@ -1,3 +1,9 @@
+2017-04-05, Version 0.0.4
+=========================
+
+ * make-sprint: enable useList functionality (Kevin Delisle)
+
+
 2017-04-03, Version 0.0.3
 =========================
 
