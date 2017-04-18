@@ -38,3 +38,18 @@ sl-gh make-sprint 2012-12-12 --token=abcdef12345abcdef12345 --org=strongloop --t
 **Note**: If used under a user's context, this will not generate milestones
 for repositories that a user does not own, _even if he/she has appropriate
 rights to do so_!
+
+
+## get-age
+
+Use the get-age command to get the list of issues with their age. 
+If an issue is closed, the age is between the date of creation and closed.
+If an issue is open, the age is between the current date and the date of creation. 
+
+For a complete list of options, run `sl-gh get-age --help`. 
+
+### Example
+The following example gets all the `open` issues in the github repo `somerepo` and save the output to `/Users/somepath/filename.csv`
+```
+sl-gh get-age myorg/somerepo.git --token=abcdef12345abcdef12345 --status=open --output=/Users/somepath/filename.csv
+```
