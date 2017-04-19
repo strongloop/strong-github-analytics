@@ -6,6 +6,9 @@
     "pretest": "eslint --ignore-path .gitignore ./",
     "test": "tap --coverage --coverage-report=cobertura ./test/test-*"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "bin": {
     "sl-gh": "./bin/sl-gh.js"
   },
